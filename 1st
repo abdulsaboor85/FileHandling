@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+#include <fstream>
+
+
+using namespace std;
+
+int main()
+
+{
+    ofstream A("A.txt");
+    
+    A<<"This i a line 1 "<<endl;
+    A<<"This i a line 2 "<<endl;
+    A<<"This i a line 3 "<<endl;
+    A<<"This i a line 4 "<<endl;
+    
+    A.close();
+    
+
+    string Text;
+
+    ifstream B("A.txt");
+while (getline (B, Text)) {
+  cout << Text<<endl;
+}
+
+}
